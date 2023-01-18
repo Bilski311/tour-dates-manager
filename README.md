@@ -4,7 +4,7 @@
 ## Front end
 
 ### Run:
-In the tour-dates-manager-front-directory
+In the tour-dates-manager-front-directory(You have to have node.js v16 and corresponding npm installed)
 ```
  npm install (If first time running)
  npm start
