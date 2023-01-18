@@ -17,4 +17,4 @@ In the /tour-dates-manager directory (You have to have Docker installed)
 ```
  docker-compose up
 ```
-Run the TourDatesManagerApplication file using any IDE that supports Java.
+Run the TourDatesManagerApplication file using any IDE that supports Java.(You have to have JDK 17 installed)
