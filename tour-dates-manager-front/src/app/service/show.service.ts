@@ -9,7 +9,9 @@ import { Show } from '../model/show';
 export class ShowService {
   showUrl = 'show';
   showsUrl = this.showUrl + '/all';
-  constructor(private http: HttpClient) { }
+  amqp: any;
+  constructor(private http: HttpClient) { 
+  }
 
   getShows(): Observable<Show[]> {
     return this.http.get<Show[]>(this.showsUrl);
