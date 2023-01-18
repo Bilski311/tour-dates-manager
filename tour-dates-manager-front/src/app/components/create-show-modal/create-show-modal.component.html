@@ -13,19 +13,19 @@
         <div>
             <mat-form-field appearance="fill">
                 <mat-label>Choose a date</mat-label>
-                <input matInput [matDatepicker]="picker" formControlName="date">
+                <input matInput [matDatepicker]="picker" formControlName="showDate">
                 <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
                 <mat-datepicker #picker></mat-datepicker>
               </mat-form-field>
         </div>
         <div>
           <label for="time">Time</label>
-          <input class="form-control" id="time" type="time" formControlName="time" required>
+          <input class="form-control" id="time" type="time" formControlName="showTime" required>
         </div>
         <div>
             <label for="ticketPrice">Ticket price</label>
             <input class="form-control" id="ticketPrice" type="number" formControlName="ticketPrice" required>
         </div>
     </div>
-    <button class="btn btn-primary" type="submit" [disabled]="!createShowForm.valid">Add Show</button>
+    <button class="btn btn-primary create-show-modal__button" type="submit" [disabled]="!createShowForm.valid">Add Show</button>
   </form>

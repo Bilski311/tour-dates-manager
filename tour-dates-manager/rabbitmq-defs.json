@@ -11,6 +11,15 @@
             "name": "/"
         }
     ],
+    "permissions": [
+        {
+         "user": "guest",
+         "vhost": "/",
+         "configure": ".*",
+         "write": ".*",
+         "read": ".*"
+        }
+       ],
     "exchanges": [
         {
             "name": "create-show-queue",

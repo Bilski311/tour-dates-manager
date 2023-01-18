@@ -26,8 +26,8 @@ export class CreateShowModalComponent {
   createShowForm = this.formBuilder.group({
     city: null,
     venue: null,
-    date: null,
-    time: null,
+    showDate: null,
+    showTime: null,
     ticketPrice: null
   });
 

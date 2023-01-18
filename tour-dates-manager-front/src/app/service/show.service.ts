@@ -18,7 +18,6 @@ export class ShowService {
   }
 
   createShow(request: any): Observable<any> {
-    console.log('THIS SHOULD SEND MESSAGE TO QUEUE TO CREATE SHOW');
-    return new Observable();
+      return this.http.post(this.showUrl, request);
   }
 }

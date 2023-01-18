@@ -24,3 +24,12 @@
 .create-show-modal__inputs > * {
     margin-top: 10px;
 }
+
+.create-show-modal {
+    &__button {
+        margin-top: 20px;
+        background-color: darkred;
+        border-color: darkred;
+        border-radius: 50px;
+    }
+}
