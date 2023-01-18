@@ -1,0 +1,20 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">City</th>
+        <th scope="col">Venue</th>
+        <th scope="col">Date</th>
+        <th scope="col">Time</th>
+      </tr>
+    </thead>
+    <tbody>
+        <ng-container *ngFor="let show of shows">
+            <tr>
+                <td>{{show.city}}</td>
+                <td>{{show.venue}}</td>
+                <td>{{show.date}}</td>
+                <td>{{show.time}}</td>
+            </tr>
+        </ng-container>
+    </tbody>
+  </table>
