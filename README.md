@@ -4,7 +4,7 @@
 ## Front end
 
 ### Run:
-In the tour-dates-manager-front-directory(You have to have node.js v16 and corresponding npm installed)
+In the tour-dates-manager-front-directory(node.js v16 and corresponding npm required)
 ```
  npm install (If first time running)
  npm start
@@ -13,8 +13,8 @@ In the tour-dates-manager-front-directory(You have to have node.js v16 and corre
 
 ### Run
 
-In the /tour-dates-manager directory (You have to have Docker installed)
+In the /tour-dates-manager directory (Docker required)
 ```
  docker-compose up
 ```
-Run the TourDatesManagerApplication file using any IDE that supports Java.(You have to have JDK 17 installed)
+Run the TourDatesManagerApplication file using any IDE that supports Java.(JDK 17 required)
