@@ -6,4 +6,9 @@ CREATE TABLE show (
     show_time TIME,
     ticket_price DECIMAL
 );
+
+CREATE TABLE city (
+    id BIGSERIAL PRIMARY KEY,
+    name VARCHAR(255)
+);
        

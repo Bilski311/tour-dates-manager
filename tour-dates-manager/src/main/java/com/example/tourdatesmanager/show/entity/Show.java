@@ -3,6 +3,8 @@ package com.example.tourdatesmanager.show.entity;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+import org.springframework.data.redis.core.RedisHash;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

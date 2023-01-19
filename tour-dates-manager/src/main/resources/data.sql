@@ -1,2 +1,10 @@
 INSERT INTO show VALUES (1, 'Warszawa', 'Stadion Narodowy', '2023-12-12', '12:00', 40);
+INSERT INTO city VALUES (1, 'Warszawa');
+INSERT INTO city VALUES (2, 'Poznań');
+INSERT INTO city VALUES (3, 'Gdańsk');
+INSERT INTO city VALUES (4, 'Wrocław');
+INSERT INTO city VALUES (5, 'Łódź');
+INSERT INTO city VALUES (6, 'Szczecin');
+INSERT INTO city VALUES (7, 'Kraków');
+INSERT INTO city VALUES (8, 'Białystok');
 COMMIT;
