@@ -9,8 +9,8 @@ import lombok.Data;
 public class CityDTO {
     private String name;
 
-    public CityDTO(City city) {
-        this.name = city.getName();
+    public CityDTO(String name) {
+        this.name = name;
     }
 
     public CityDTO(CityJpaEntity city) {

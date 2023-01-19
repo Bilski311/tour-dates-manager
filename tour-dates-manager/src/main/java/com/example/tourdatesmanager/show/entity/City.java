@@ -2,6 +2,8 @@ package com.example.tourdatesmanager.show.entity;
 
 import org.springframework.data.redis.core.RedisHash;
 
+import com.example.tourdatesmanager.show.dto.CityDTO;
+
 import jakarta.persistence.Column;
 import lombok.Getter;
 import lombok.Setter;
@@ -10,6 +12,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class City {
+
     private Long id;
 
     @Column(name = "name")
