@@ -15,7 +15,7 @@ public class QueueSender {
     private Queue queue;
 
     public void send(CreateShowRequest request) {
-        this.template.convertAndSend(queue.getName(), SerializationUtils.serialize(request));
+        this.template.convertAndSend(queue.getName(), request);
         System.out.println(" [x] Sent '" + request + "'");
     }
 }

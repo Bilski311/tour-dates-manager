@@ -1,6 +1,5 @@
-package com.example.tourdatesmanager.show.dto;
+package com.example.showservice.show.dto;
 
-import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
