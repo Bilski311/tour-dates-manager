@@ -33,6 +33,16 @@ export class AdminPanelComponent implements OnInit {
   }
 
   onSubmit(): void {
-    console.log('Update the table here');
+    setTimeout(() => {
+      this.showService.getShows().subscribe(next => {
+        this.shows = next;
+      })
+    }, 2000);
+  }
+
+  deleteShow(id: number) {
+    this.showService.deleteShow(id).subscribe(next => this.showService.getShows().subscribe(next => {
+      this.shows = next;
+    }));
   }
 }

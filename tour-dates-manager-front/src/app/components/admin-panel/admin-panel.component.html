@@ -1,5 +1,5 @@
 <img class="logo" src="assets/Rezz-logo.png">
 <h3>Tour dates admin panel</h3>
 <app-search-shows-form></app-search-shows-form>
-<app-shows-table [shows]="shows"></app-shows-table>
+<app-shows-table [shows]="shows" (deleteShowEmitter)="deleteShow($event)"></app-shows-table>
 <button class="btn btn-primary create-button" (click)="openModal()" >Create a show</button>

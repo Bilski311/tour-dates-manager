@@ -20,4 +20,8 @@ export class ShowService {
   createShow(request: any): Observable<any> {
       return this.http.post(this.showUrl, request);
   }
+  
+  deleteShow(id: number): Observable<any> {
+      return this.http.delete(this.showUrl + '/' + id);
+  }
 }

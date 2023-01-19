@@ -6,6 +6,7 @@
         <th scope="col">Date</th>
         <th scope="col">Time</th>
         <th scope="col">Ticket price</th>
+        <th scope="col">Action</th>
       </tr>
     </thead>
     <tbody>
@@ -15,7 +16,8 @@
                 <td>{{show.venue}}</td>
                 <td>{{show.showDate}}</td>
                 <td>{{show.showTime}}</td>
-                <td>{{show.ticketPrice}}</td>
+                <td>{{show.ticketPrice}} PLN</td>
+                <td><button class="btn btn-primary delete-button" (click)="deleteShow(show.id)" >Delete</button></td>
             </tr>
         </ng-container>
     </tbody>

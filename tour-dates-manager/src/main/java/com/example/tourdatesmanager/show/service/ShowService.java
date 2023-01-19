@@ -24,9 +24,7 @@ public class ShowService {
         return shows;
     }
 
-    // public void createShow(CreateShowRequest request) {
-    //     // Show show = createShowEntityFromRequest(request);
-
-    //     // showRepository.save(show);
-    // }
+    public void deleteShow(Long id) {
+        this.showRepository.delete(this.showRepository.findById(id).get());
+    }
 }

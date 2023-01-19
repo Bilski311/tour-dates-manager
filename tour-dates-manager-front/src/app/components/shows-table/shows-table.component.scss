@@ -5,9 +5,24 @@
 th {
     color: #330000;
     border-color: black;
+    text-align: center;
 }
 
 td {
     border-color: black;
     color: #330000;
+    text-align: center;
+}
+
+.delete-button {
+    max-height: 23px;
+    width: 60%;
+    margin-left: 20%;
+    background-color: darkred;
+    border-color: darkred;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
 }

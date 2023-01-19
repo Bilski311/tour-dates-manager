@@ -9,6 +9,8 @@ import lombok.Data;
 
 @Data
 public class ShowDTO {
+    private Long id;
+
     private String city;
 
     private String venue;
@@ -20,6 +22,7 @@ public class ShowDTO {
     private Double ticketPrice;
 
     public ShowDTO(Show show) {
+        this.id = show.getId();
         this.city = show.getCity();
         this.venue = show.getVenue();
         this.showDate = show.getShowDate();
