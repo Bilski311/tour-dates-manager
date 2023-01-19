@@ -3,6 +3,7 @@ CREATE TABLE show (
     city VARCHAR(255),
     venue VARCHAR(255),
     show_date DATE,
-    show_time TIME
+    show_time TIME,
+    ticket_price DECIMAL
 );
        

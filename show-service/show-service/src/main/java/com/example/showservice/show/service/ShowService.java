@@ -1,12 +1,9 @@
 package com.example.showservice.show.service;
 
-import java.util.List;
-import java.util.stream.Collectors;
-
 import org.springframework.stereotype.Service;
 
 import com.example.showservice.show.dto.CreateShowRequest;
-import com.example.showservice.show.dto.ShowDTO;
+import com.example.showservice.show.entity.Show;
 import com.example.showservice.show.repository.ShowRepository;
 
 import lombok.RequiredArgsConstructor;
@@ -19,8 +16,18 @@ public class ShowService {
 
     public void createShow(CreateShowRequest request) {
         System.out.println("Creating show.");
-        // Show show = createShowEntityFromRequest(request);
+        Show show = createShowEntityFromRequest(request);
+        showRepository.save(show);
+    }
 
-        // showRepository.save(show);
+    private Show createShowEntityFromRequest(CreateShowRequest request) {
+        Show show = new Show();
+        show.setCity(request.getCity());
+        show.setVenue(request.getVenue());
+        show.setShowDate(request.getShowDate());
+        show.setShowTime(request.getShowTime());
+        show.setTicketPrice(request.getTicketPrice());
+
+        return show;
     }
 }

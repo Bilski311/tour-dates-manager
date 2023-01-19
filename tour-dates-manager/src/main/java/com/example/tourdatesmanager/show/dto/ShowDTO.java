@@ -17,10 +17,13 @@ public class ShowDTO {
 
     private LocalTime showTime;
 
+    private Double ticketPrice;
+
     public ShowDTO(Show show) {
         this.city = show.getCity();
         this.venue = show.getVenue();
         this.showDate = show.getShowDate();
         this.showTime = show.getShowTime();
+        this.ticketPrice = show.getTicketPrice();
     }
 }

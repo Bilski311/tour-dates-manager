@@ -13,6 +13,7 @@ import org.springframework.context.annotation.Configuration;
 
 import com.example.showservice.rabbit.QueueReceiver;
 import com.example.showservice.show.dto.CreateShowRequest;
+import com.example.showservice.show.service.ShowService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @Configuration
@@ -25,8 +26,7 @@ public class RabbitConfig {
     @Bean
     public Jackson2JsonMessageConverter getConverter(
             @Autowired ObjectMapper objectMapper) {
-        Jackson2JsonMessageConverter messageConverter =
-        new Jackson2JsonMessageConverter(objectMapper);
+        Jackson2JsonMessageConverter messageConverter = new Jackson2JsonMessageConverter(objectMapper);
         messageConverter.setClassMapper(getClassMapper());
         return messageConverter;
     }
@@ -36,15 +36,15 @@ public class RabbitConfig {
         DefaultClassMapper classMapper = new DefaultClassMapper();
         Map<String, Class<?>> map = new HashMap<>();
         map.put(
-        "com.example.tourdatesmanager.show.dto." + 
-        "CreateShowRequest",
-        CreateShowRequest.class);
+                "com.example.tourdatesmanager.show.dto." +
+                        "CreateShowRequest",
+                CreateShowRequest.class);
         classMapper.setIdClassMapping(map);
         return classMapper;
     }
 
     @Bean
-    public QueueReceiver receiver() {
-        return new QueueReceiver();
+    public QueueReceiver receiver(@Autowired ShowService showService) {
+        return new QueueReceiver(showService);
     }
 }

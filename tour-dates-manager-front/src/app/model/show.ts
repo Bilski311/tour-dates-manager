@@ -5,6 +5,7 @@ export class Show {
         public city: string,
         public venue: string,
         public showDate: Date,
-        public showTime: Time
+        public showTime: Time,
+        public ticketPrice: number
     ) {}
 }

@@ -32,4 +32,7 @@ public class Show {
 
     @Column(name = "show_time")
     private LocalTime showTime;
+
+    @Column(name = "ticket_price")
+    private Double ticketPrice;
 }
