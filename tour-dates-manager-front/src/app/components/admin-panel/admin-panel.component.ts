@@ -37,7 +37,7 @@ export class AdminPanelComponent implements OnInit {
       this.showService.getShows().subscribe(next => {
         this.shows = next;
       })
-    }, 2000);
+    }, 3000);
   }
 
   deleteShow(id: number) {

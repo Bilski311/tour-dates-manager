@@ -3,7 +3,9 @@
     <div class="create-show-modal__inputs form-group">
         <div>
           <label for="city">City</label>
-          <input class="form-control" type="text" id="city" formControlName="city" required>
+          <select class="form-control" id="city" formControlName="city"required>
+            <option *ngFor="let city of this.cities" [value]="city">{{city}}</option>
+          </select>
         </div>
         <div>
             <label for="venue">Venue</label>

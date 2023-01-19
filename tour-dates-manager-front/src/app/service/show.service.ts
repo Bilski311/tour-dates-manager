@@ -9,7 +9,6 @@ import { Show } from '../model/show';
 export class ShowService {
   showUrl = 'show';
   showsUrl = this.showUrl + '/all';
-  amqp: any;
   constructor(private http: HttpClient) { 
   }
 
